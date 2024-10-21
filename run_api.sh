@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Activar entorno para API
-source ./api_env/bin/activate
+# Instalar dependencias 
+pip install -r requirements.txt
 
-# Iniciar Streamlit (Si no funciona ejecutar una primera vez streamlit fuera del script)
+# Iniciar Streamlit
 streamlit run front_streamlit.py --server.port=8501 --server.headless=True &
 
 # Iniciar API (FastAPI)
