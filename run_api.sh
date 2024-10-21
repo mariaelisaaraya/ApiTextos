@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Activar entorno para API
-source api_env/bin/activate
+source ./api_env/bin/activate
 
 # Iniciar Streamlit (Si no funciona ejecutar una primera vez streamlit fuera del script)
 streamlit run front_streamlit.py --server.port=8501 --server.headless=True &
